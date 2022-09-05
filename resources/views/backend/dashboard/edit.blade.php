@@ -93,9 +93,10 @@
                                     </div>
                                     <img src="{{ asset('images/' . $blog->image)}}" alt="" style="width:50%;">
 
-                                    <div class="form-group row">
+                                    <div class="form-group row mt-4">
                                         <div class="col-sm-10">
                                             <button type="submit" class="btn btn-primary">Submit</button>
+                                            <a href="{{ route('index') }}" class="btn btn-dark">Back</a>
                                         </div>
                                     </div>
                                 </form>

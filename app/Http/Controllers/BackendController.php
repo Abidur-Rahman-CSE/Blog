@@ -32,8 +32,15 @@ class BackendController extends Controller
         return back()->with('success','You have successfully upload blog!.');
     }
 
+    function show( Blog $blog){
+        // $blog->delete();
+        return  view('backend.dashboard.show', compact('blog'));
+
+    }
     function blogDelete( Blog $blog){
-        return $blog;
+        $blog->delete();
+        return back()->with('success','You have successfully upload blog!.');
+
     }
     function index()
     {
