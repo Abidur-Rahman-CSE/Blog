@@ -8,14 +8,14 @@
                         <!--Post-1-->
                         <div class="post-card">
                             <div class="post-card-image">
-                                <a href="post-default.html">
+                                <a href="{{ route('blog_show', $blog->id) }}">
                                     <img src="{{ asset('images/' . $blog->image) }}" alt="">
                                 </a>
                             </div>
                             <div class="post-card-content">
                                 <a href="blog-grid.html" class="categorie">Livestyle</a>
                                 <h5>
-                                    <a href="post-default.html">{{ $blog->title }}</a>
+                                    <a href="{{ route('blog_show', $blog->id) }}">{{ $blog->title }}</a>
                                 </h5>
                                 <p>{{ $blog->body  }}</p>
                                 <div class="post-card-info">
